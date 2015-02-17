@@ -4,7 +4,7 @@ package messageservice;
  *
  * @author Dan
  */
-public interface MessageWriter {
+public interface MessageWriterStrategy {
 
     public abstract void writeMessage(String line);
 }

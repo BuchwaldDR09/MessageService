@@ -4,7 +4,7 @@ package messageservice;
  *
  * @author Dan
  */
-public interface MessageReader {
+public interface MessageReaderStrategy {
 
     public abstract String readMessage();
 }

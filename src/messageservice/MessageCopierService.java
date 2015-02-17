@@ -6,11 +6,11 @@ package messageservice;
  */
 public class MessageCopierService {
 
-    private MessageReader reader;
-    private MessageWriter writer;
+    private MessageReaderStrategy reader;
+    private MessageWriterStrategy writer;
     private String line;
 
-    public MessageCopierService(MessageReader reader, MessageWriter writer) {
+    public MessageCopierService(MessageReaderStrategy reader, MessageWriterStrategy writer) {
         this.reader = reader;
         this.writer = writer;
     }
@@ -28,19 +28,19 @@ public class MessageCopierService {
         writer.writeMessage(line);
     }
 
-    public MessageReader getReader() {
+    public MessageReaderStrategy getReader() {
         return reader;
     }
 
-    public void setReader(MessageReader reader) {
+    public void setReader(MessageReaderStrategy reader) {
         this.reader = reader;
     }
 
-    public MessageWriter getWriter() {
+    public MessageWriterStrategy getWriter() {
         return writer;
     }
 
-    public void setWriter(MessageWriter writer) {
+    public void setWriter(MessageWriterStrategy writer) {
         this.writer = writer;
     }
 }

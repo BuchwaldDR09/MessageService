@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  * @author Dan
  */
-public class KeyboardMessageReader implements MessageReader {
+public class KeyboardMessageReader implements MessageReaderStrategy {
 
     @Override
     public String readMessage() {

@@ -8,11 +8,11 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        MessageReader freader = new MessageFileReaderStrategy();
-        MessageWriter fwriter = new MessageFileWriterStrategy();
+        MessageReaderStrategy freader = new MessageFileReader();
+        MessageWriterStrategy fwriter = new MessageFileWriter();
 
-        MessageReader reader = new KeyboardMessageReader();
-        MessageWriter writer = new GuiMessageOutputStrategy();
+        MessageReaderStrategy reader = new KeyboardMessageReader();
+        MessageWriterStrategy writer = new GuiMessageOutput();
         MessageCopierService copier = new MessageCopierService(reader, writer);
         //Copier copier = new Copier( freader, fwriter );
         copier.copyMessage();
@@ -23,7 +23,7 @@ public class Driver {
         // Send end of program message
         System.out.println("\ncopied successfull.\n");
         
-        MessageWriter cwriter = new ConsoleMessageWriterStrategy();
+        MessageWriterStrategy cwriter = new ConsoleMessageWriter();
         //copier.setReader(freader);
         copier.setWriter(cwriter);
         copier.writeMessage();

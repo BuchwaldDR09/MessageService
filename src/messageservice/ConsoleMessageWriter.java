@@ -9,7 +9,7 @@ package messageservice;
  *
  * @author Dan
  */
-public class ConsoleMessageWriterStrategy implements MessageWriter {
+public class ConsoleMessageWriter implements MessageWriterStrategy {
 
     public void writeMessage(String line) {
         System.out.println("New Message:");
