@@ -15,16 +15,16 @@ public class MessageCopierService {
         this.writer = writer;
     }
 
-    public void copy() {
+    public void copyMessage() {
         line = reader.readMessage();
         writer.writeMessage(line);
     }
 
-    public void readLine() {
+    public void readMessage() {
         line = reader.readMessage();
     }
 
-    public void writeLine() {
+    public void writeMessage() {
         writer.writeMessage(line);
     }
 

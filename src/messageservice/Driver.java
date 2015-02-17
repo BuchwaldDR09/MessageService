@@ -15,10 +15,10 @@ public class Driver {
         MessageWriter writer = new GuiMessageOutputStrategy();
         MessageCopierService copier = new MessageCopierService(reader, writer);
         //Copier copier = new Copier( freader, fwriter );
-        copier.copy();
+        copier.copyMessage();
 
         copier.setWriter(fwriter);
-        copier.writeLine();
+        copier.writeMessage();
 //
         // Send end of program message
         System.out.println("\ncopied successfull.\n");
@@ -26,7 +26,7 @@ public class Driver {
         MessageWriter cwriter = new ConsoleMessageWriter();
         //copier.setReader(freader);
         copier.setWriter(cwriter);
-        copier.writeLine();
+        copier.writeMessage();
                 
 
         
