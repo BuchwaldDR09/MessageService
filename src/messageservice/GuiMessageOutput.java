@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 public class GuiMessageOutput implements MessageWriter {
 
     @Override
-    public void writeln(String line) {
+    public void writeMessage(String line) {
         JOptionPane.showMessageDialog(null, line);
     }
 }

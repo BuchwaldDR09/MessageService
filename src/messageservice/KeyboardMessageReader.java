@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class KeyboardMessageReader implements MessageReader {
 
     @Override
-    public String readln() {
+    public String readMessage() {
         System.out.println("Enter your message here: ");
 
         Scanner messageInput = new Scanner(System.in);

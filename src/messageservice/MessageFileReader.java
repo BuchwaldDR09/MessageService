@@ -14,7 +14,7 @@ public class MessageFileReader implements MessageReader {
     private boolean lineReadFlag = false;
 
     @Override
-    public String readln() {
+    public String readMessage() {
 
         File data = new File(File.separator + "Temp" + File.separator + "data.txt");
         BufferedReader in = null;

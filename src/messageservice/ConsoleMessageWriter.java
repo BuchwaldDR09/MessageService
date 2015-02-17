@@ -11,7 +11,7 @@ package messageservice;
  */
 public class ConsoleMessageWriter implements MessageWriter {
 
-    public void writeln(String line) {
+    public void writeMessage(String line) {
         System.out.println("New Message:");
         System.out.println(line);
     }

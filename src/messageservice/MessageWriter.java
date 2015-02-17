@@ -6,5 +6,5 @@ package messageservice;
  */
 public interface MessageWriter {
 
-    public abstract void writeln(String line);
+    public abstract void writeMessage(String line);
 }

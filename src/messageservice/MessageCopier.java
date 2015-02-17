@@ -16,16 +16,16 @@ public class MessageCopier {
     }
 
     public void copy() {
-        line = reader.readln();
-        writer.writeln(line);
+        line = reader.readMessage();
+        writer.writeMessage(line);
     }
 
     public void readLine() {
-        line = reader.readln();
+        line = reader.readMessage();
     }
 
     public void writeLine() {
-        writer.writeln(line);
+        writer.writeMessage(line);
     }
 
     public MessageReader getReader() {

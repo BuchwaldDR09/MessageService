@@ -11,7 +11,7 @@ import java.io.PrintWriter;
  */
 public class MessageFileWriter implements MessageWriter {
 
-    public void writeln(String line) {
+    public void writeMessage(String line) {
         boolean append = false;
         File data = new File(File.separatorChar + "Temp"
                 + File.separatorChar + "datacopy.txt");
