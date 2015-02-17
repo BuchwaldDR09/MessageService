@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
  *
  * @author Dan
  */
-public class GuiMessageOutput implements MessageWriter {
+public class GuiMessageOutputStrategy implements MessageWriter {
 
     @Override
     public void writeMessage(String line) {

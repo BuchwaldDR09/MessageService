@@ -12,8 +12,8 @@ public class Driver {
         MessageWriter fwriter = new MessageFileWriter();
 
         MessageReader reader = new KeyboardMessageReader();
-        MessageWriter writer = new GuiMessageOutput();
-        MessageCopier copier = new MessageCopier(reader, writer);
+        MessageWriter writer = new GuiMessageOutputStrategy();
+        MessageCopierService copier = new MessageCopierService(reader, writer);
         //Copier copier = new Copier( freader, fwriter );
         copier.copy();
 
