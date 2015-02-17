@@ -9,7 +9,7 @@ import java.io.IOException;
  * @author Dan referenced from Jim Lombardo. Used to validate that there is text
  * in the file, if not throw an exception or return null.
  */
-public class MessageFileReader implements MessageReader {
+public class MessageFileReaderStrategy implements MessageReader {
 
     private boolean lineReadFlag = false;
 
